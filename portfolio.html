@@ -7,28 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="container">
         <!--Header-->
         <a class="header-company-name1" href="/">Web<span class="header-company-name2">Studio</span></a>
-        <nav>
+        <nav class="navigation">
             <ul class="navigate-list">
                 <li class="navigate-item"><a class="page-buttons" href="./index.html">Студия</a></li>
                 <li class="navigate-item"><a class="page-buttons" href="./portfolio.html">Портфолио</a></li>
-                <li class="navigate-item"><a class="page-buttons" href="contacts.html">Контакты</a></li>
+                <li class="navigate-item"><a class="page-buttons" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+            <ul class="header-contact-list">
+                <li><a class="header-gmail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
+        <div class="container">
         <!--Buttons-->
         <ul>
             <li><button class="button-gallery" type="button">Все</button></li>
@@ -85,10 +89,12 @@
                     <p class="gallery-paragraph">Приложение</p></a>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <!--WebStudio Footer-->
     <footer class="footer-background">
+    <div class="container">
         <a class="footer-company-name1" href="/">Web<span class="footer-company-name2">Studio</span></a>
         <address class="location">
             <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
@@ -96,5 +102,6 @@
             <a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
     </footer>
+    </div>
 </body>
 </html>

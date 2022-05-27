@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Studio</title> 
 </head>
 
 <body>
     <header class="header">
+        <div class="container">
         <!--Header-->
         <a class="header-company-name1" href="/">Web<span class="header-company-name2">Studio</span></a>
         <nav class="navigation">
@@ -23,20 +25,23 @@
                 <li class="navigate-item"><a class="page-buttons" href="">Контакты</a></li>
             </ul>
         </nav>
-            <ul>
-                <li><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="header-contact-list">
+                <li><a class="header-gmail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
     <main>
         <section class="head-background">
+            <div class="container">
             <!--Head--> 
             <h1 class="main-title">Эффективные решения <br /> для вашего бизнеса</h1>
             <button class="button-title" type="button">Заказать услуги</button>
         </section>
-        <section>  
+        <section>
+            <div class="container">
             <!--Specialisation-->
-            <ul>
+            <ul class="specialisations">
                 <li class="specialisation-item"> 
                     <h3 class="specialisation-title">Внимание к деталям</h3>
                     <p class="specialisation-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -54,55 +59,64 @@
                     <p class="specialisation-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!--Our-Work-->
         <section>
+            <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
-                <ul>
-                    <li><img class="work-image-1" src="images/box1.jpg" alt="Рабочее c клавиатурой" width="370"></li>
-                    <li><img class="work-image-2" src="images/box2.jpg" alt="Рабочее лептопом" width="370"></li>
-                    <li><img class="work-image-3" src="images/box3.jpg" alt="Рабочее с планшетом" width="370"></li>
+                <ul class="work-images">
+                    <li class="work-item"><img src="images/box1.jpg" alt="Рабочее c клавиатурой" width="370" height="294"></li>
+                    <li class="work-item"><img src="images/box2.jpg" alt="Рабочее лептопом" width="370" height="294"></li>
+                    <li class="work-item"><img src="images/box3.jpg" alt="Рабочее с планшетом" width="370" height="294"></li>
                 </ul>
+            </div>
         </section>
         <!--Our-Team-->
         <section class="team-section">
+            <div class="container">
             <h2 class="title-team">Наша команда</h2>
             <!--Igor-->
-            <ul>
+            <ul class="person-list">
                 <li class="person">
                     <img class="person-image" src="images/igor.jpg" width="270" alt="Фото пользователя">
                     <p class="person-name">Игорь Демьяненко</p>
                     <p class="person-description">Product Designer</p>
                 </li>
             <!--Olha-->
-                <li>
+                <li class="person">
                     <img class="person-image" src="images/olga.jpg" width="270" alt="Фото пользователя">
                     <p class="person-name">Ольга Репина</p>
                     <p class="person-description">Frontend Developer</p>
                 </li>
             <!--Mukhola-->
-                <li>
+                <li class="person">
                     <img class="person-image" src="images/nikolai.jpg" width="270" alt="Фото пользователя">
                     <p class="person-name">Николай Тарасов</p>
                     <p class="person-description">Marketing</p>
                 </li>
             <!--Mikhailo-->
-                <li>
+                <li class="person">
                     <img class="person-image" src="images/mikhail.jpg" width="270" alt="Фото пользователя">
                     <p class="person-name">Михаил Ермаков</p>
                     <p class="person-description">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--WebStudio Footer-->
     <footer class="footer-background">
+        <div class="container">
+        <div class="footer-name">
         <a class="footer-company-name1" href="/">Web<span class="footer-company-name2">Studio</span></a>
+        </div>
         <address class="location">
             <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-contacts" href="mailto:info@example.com">info@example.com</a><br>
-            <a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="footer-gmail footer-email" href="mailto:info@example.com">info@example.com</a><br>
+            <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
+        </div>
     </footer>
 </body>
 </html>
