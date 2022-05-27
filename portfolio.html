@@ -31,10 +31,10 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="section">
         <div class="container">
         <!--Buttons-->
-        <ul>
+        <ul class="gallery-button-list">
             <li><button class="button-gallery" type="button">Все</button></li>
             <li><button class="button-gallery" type="button">Веб-сайты</button></li>
             <li><button class="button-gallery" type="button">Приложения</button></li>
@@ -42,66 +42,86 @@
             <li><button class="button-gallery" type="button">Макретинг</button></li>
         </ul>
         <!--Gallery-->
-            <ul>
+            <ul class="site-list">
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="./images/techcrack.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Технокряк</h2>
-                    <p class="gallery-paragraph">Веб-сайт</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Технокряк</h2>
+                        <p class="gallery-paragraph">Веб-сайт</p></a>
+                    </div>    
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/poster.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="gallery-paragraph">Дизайн</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="gallery-paragraph">Дизайн</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/seafood.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Ресторан Seafood</h2>
-                    <p class="gallery-paragraph">Приложение</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Ресторан Seafood</h2>
+                        <p class="gallery-paragraph">Приложение</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/headphones.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Проект Prime</h2>
-                    <p class="gallery-paragraph">Макретинг</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Проект Prime</h2>
+                        <p class="gallery-paragraph">Макретинг</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/boxes.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Проект Boxes</h2>
-                    <p class="gallery-paragraph">Приложение</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Проект Boxes</h2>
+                        <p class="gallery-paragraph">Приложение</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/inspiration.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Inspiration has no Borders</h2>
-                    <p class="gallery-paragraph">Веб-сайт</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Inspiration has no Borders</h2>
+                        <p class="gallery-paragraph">Веб-сайт</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/limited-edition.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Издание Limited Edition</h2>
-                    <p class="gallery-paragraph">Дизайн</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Издание Limited Edition</h2>
+                        <p class="gallery-paragraph">Дизайн</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/lab.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Проект LAB</h2>
-                    <p class="gallery-paragraph">Макретинг</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Проект LAB</h2>
+                        <p class="gallery-paragraph">Макретинг</p></a>
+                    </div>
                 </li>
                 <li class="galleries">
                     <a class="gallery-image" href="/" target="_blank"><img src="images/growing-business.jpg" width="370" height="294" alt="Фото пользователя">
-                    <h2 class="gallery-title">Growing Business</h2>
-                    <p class="gallery-paragraph">Приложение</p></a>
+                    <div class="project-info">
+                        <h2 class="gallery-title">Growing Business</h2>
+                        <p class="gallery-paragraph">Приложение</p></a>
+                    </div>
                 </li>
             </ul>
         </div>
         </section>
     </main>
     <!--WebStudio Footer-->
-    <footer class="footer-background">
-    <div class="container">
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-name">
         <a class="footer-company-name1" href="/">Web<span class="footer-company-name2">Studio</span></a>
+        </div>
         <address class="location">
             <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-contacts" href="mailto:info@example.com">info@example.com</a><br>
-            <a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="footer-contacts footer-email" href="mailto:info@example.com">info@example.com</a><br>
+            <a class="footer-contacts footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
+        </div>
     </footer>
-    </div>
 </body>
 </html>

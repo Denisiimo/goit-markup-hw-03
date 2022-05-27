@@ -3,7 +3,9 @@ body {
     color: #212121;
 }
 
-ul {
+ul, ol {
+    margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -21,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid crimson;
+    /* outline: 1px solid crimson; */
 }
 
 .section {
@@ -50,28 +52,6 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.button-gallery {
-    font-family: inherit;
-    background-color: #F5F4FA;
-    border: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.button-gallery:hover,
-.button-galley:focus,
-.button-galley:active {
-    color: white;
-    background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .page-buttons {
@@ -159,29 +139,6 @@ h1,h2,h3,h4,h5,h6 {
 .header-gmail {
     margin-right: 50px;
 }
-
-/* ----------------------------------------------------------------------------------------Gallery----------------------------------------------------------------------------------------------- */
-.galleries {
-}
-
-.gallery-image {   
-}
-
-.gallery-title {
-    color: #212121;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.gallery-paragraph {
-    color: #757575;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-}
-
 /* ----------------------------------------------------------------------------------------Work----------------------------------------------------------------------------------------------- */
 
 .main-title {
@@ -235,27 +192,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .work-title {
-    padding-top: 94px;
+    margin-top: 94px;
     padding-bottom: 50px;
     margin-bottom: 0px;
 }
 
 .work-images {
     display: flex;
-    margin-left: -30px;
+    margin-bottom: 188px;
 }
 
 .work-item {
-    flex-basis: calc(100% \ 3 - 30px);
-    margin-left: 30px;
+    margin-right: 30px;
+    flex-basis: calc(100% / 3 - 30px);
 }
-
-
 /* ----------------------------------------------------------------------------------------People----------------------------------------------------------------------------------------------- */
 
 .title-team {
-    padding-bottom: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .person:not(:last-child) {
@@ -264,6 +219,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .person {
     width: calc(100% / 4 - 30px);
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+}
+
+.person-image {
+    margin-bottom: 30px;
 }
 
 .person-list {
@@ -281,6 +244,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 10px;
 }
 
 .person-description {
@@ -293,10 +257,6 @@ h1,h2,h3,h4,h5,h6 {
 
 /* ----------------------------------------------------------------------------------------Background colors----------------------------------------------------------------------------------------------- */
 
-.footer-background {
-    background: #2F303A;
-}
-
 .head-background {
     background: #2F303A;
 }
@@ -306,6 +266,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* ----------------------------------------------------------------------------------------Footer----------------------------------------------------------------------------------------------- */
+
+.location {
+    padding: 0;
+}
+
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .footer-name {
     margin-bottom: 20px;
@@ -336,40 +306,90 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
-.footer-tel,
-.footer-gmail {
+.footer-contacts {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    display: flex;
 }
 
 .footer-email {
-    margin-bottom: 9px;
+    margin-bottom: -9px;
 }
 
+/* ----------------------------------------------------------------------------------------Porfolio----------------------------------------------------------------------------------------------- */
+.button-gallery {
+    font-family: inherit;
+    background-color: #F5F4FA;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 6px 22px;
+}
 
+.button-gallery:hover,
+.button-gallery:focus,
+.button-galleyr:active {
+    color: white;
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 
-
-/* .work-images {
+.site-list,
+.gallery-button-list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.gallery-button-list {
     justify-content: center;
-    padding-left: 0px;
+    margin-bottom: 50px;
+}
+
+.galleries {
+    box-sizing: border-box;
+    width: 370px;
+    flex-basis: calc(100% \ 3 - 30px);
+    margin: 15px;
+    border: 1px solid #EEEEEE;
+}
+
+.gallery-image {   
+}
+
+.gallery-title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.gallery-paragraph {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
     margin: 0;
 }
 
-.work-item:not(:last-child) {
-    margin-right: 30px;
+.project-info {
+    margin: 20px 24px;
 }
-
-.work-item {
-    width: calc(100% / 3 - 30px);
-}
-
 
 
 
