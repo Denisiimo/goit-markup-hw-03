@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .section {
     padding-top: 94px;
-    padding-bottom: 95px;
+    padding-bottom: 94px;
 }
 
 /* ----------------------------------------------------------------------------------------Buttons----------------------------------------------------------------------------------------------- */
@@ -149,12 +149,20 @@ h1,h2,h3,h4,h5,h6,p {
     color: #FFFFFF;
 }
 
+.specialisation-section {
+    padding-top: 0;
+}
+
 .specialisations {
     display: flex;
 }
 
 .specialisation-item:not(:last-child) {
-    padding-right: 30px;
+    margin-right: 30px;
+}
+
+.specialisation-item {
+    width: 270px;
 }
 
 .specialisation-title {
@@ -164,7 +172,7 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    padding-right: 30px;
+    margin-bottom: 10px;
 }
 
 .specialisation-text {
@@ -172,8 +180,11 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-top: 10px;
     margin-bottom: 0px;
+}
+
+.specialisation-section {
+    padding-top: 0;
 }
 
 /* ----------------------------------------------------------------------------------------Work-images----------------------------------------------------------------------------------------------- */
@@ -188,13 +199,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .work-title {
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
 .work-images {
     display: flex;
-    margin-bottom: 188px;
 }
 
 .work-item {
