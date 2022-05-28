@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     margin-top: 0;
     padding-bottom: 0;
 }
@@ -75,7 +75,8 @@ h1,h2,h3,h4,h5,h6 {
 .header {
     background: #FFFFFF;
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -114,9 +115,6 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Navigation */
 
-.navigation {
-}
-
 .navigate-list {
     display: flex;
     align-items: center;
@@ -153,8 +151,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .specialisations {
     display: flex;
-    margin-top: 94px;
-    padding: 0;
 }
 
 .specialisation-item:not(:last-child) {
@@ -193,8 +189,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .work-title {
     margin-top: 94px;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .work-images {
@@ -222,11 +217,6 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
-}
-
-.person-image {
-    margin-bottom: 30px;
 }
 
 .person-list {
@@ -237,6 +227,11 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: -15px;
 }
 
+.person-details {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .person-name {
     font-weight: 500;
     font-size: 16px;
@@ -244,6 +239,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 0;
     margin-bottom: 10px;
 }
 
@@ -253,6 +249,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0;
 }
 
 /* ----------------------------------------------------------------------------------------Background colors----------------------------------------------------------------------------------------------- */
@@ -334,8 +331,11 @@ h1,h2,h3,h4,h5,h6 {
     color: #212121;
     cursor: pointer;
     border-radius: 4px;
-    margin-right: 8px;
     padding: 6px 22px;
+}
+
+.button-gallery-li {
+    margin-right: 8px;
 }
 
 .button-gallery:hover,
@@ -351,6 +351,9 @@ h1,h2,h3,h4,h5,h6 {
 .gallery-button-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.site-list {
     margin: -15px;
 }
 
@@ -365,9 +368,6 @@ h1,h2,h3,h4,h5,h6 {
     flex-basis: calc(100% \ 3 - 30px);
     margin: 15px;
     border: 1px solid #EEEEEE;
-}
-
-.gallery-image {   
 }
 
 .gallery-title {
@@ -388,7 +388,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .project-info {
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 
 
